@@ -44,9 +44,9 @@ jobs:
       - name: terraform apply
         uses: azurenoops/terraform-github-actions/terraform-apply@v1.34.2
         with: 
-          path: rg2
+          path: ${{ env.SRC_PATH}}
           backend_config: |
                         resource_group_name=${{ secrets.AZURE_RG }}
                         storage_account_name=${{ secrets.AZURE_SA }}
                         container_name=${{ secrets.AZURE_SC }}
-                        key=${{ secrets.AZURE_RG1_KEY }}
+                        key=${{ env.TF_KEY }}

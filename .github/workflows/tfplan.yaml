@@ -8,8 +8,7 @@ env:
     ARM_TENANT_ID: ${{ secrets.AZURE_AD_TENANT_ID }}
 on:
     - pull_request
-    tags:
-        - ''rg2'
+
 permissions:
     contents: read
     pull-requests: write
@@ -24,9 +23,9 @@ jobs:
             -   name: Terraform plan
                 uses: azurenoops/terraform-github-actions/terraform-plan@v1.34.2
                 with:
-                    path: src/rg2
+                    path: src/[WORKSPACE_FOLDER] #CHANGE WORKSPACE FOLDER NAME
                     backend_config: |
                         resource_group_name=${{ secrets.AZURE_RG }}
                         storage_account_name=${{ secrets.AZURE_SA }}
                         container_name=${{ secrets.AZURE_SC }}
-                        key=${{ secrets.AZURE_RG2_KEY }}
+                        key=${{ secrets.AZURE_KEY }}

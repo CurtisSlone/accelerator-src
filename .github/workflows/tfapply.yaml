@@ -39,7 +39,7 @@ jobs:
           esac
       - name: Check Var
         run: |
-          echo ${{env.TEST}}
+          echo "${{env.TEST}}"
       - name: terraform apply
         uses: azurenoops/terraform-github-actions/terraform-apply@v1.34.2
         with: 

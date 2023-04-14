@@ -29,6 +29,13 @@ jobs:
               echo "SRC_PATH=rg1" >> $GITHUB_ENV
               echo "Finished"
               ;;
+            *"rg2"*)
+              echo "Setting TF_KEY and SRC to match rg2 case"
+              echo "TF_KEY=${{ secrets.AZURE_RG2_KEY }}" >> $GITHUB_ENV
+              echo "Making PATH"
+              echo "SRC_PATH=rg2" >> $GITHUB_ENV
+              echo "Finished"
+              ;;
             *)
               echo "false"
               exit 1

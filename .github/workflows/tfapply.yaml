@@ -18,7 +18,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
+      - name: Check Commit
+        run: |
+          if grep -q "rg1" "${{ github.event.head_commit.message}}"; then
+            echo "Found rg1"
+          else
+            echo "Did not find"
+            exit 1
+          fi
+  
       - name: terraform apply
         uses: azurenoops/terraform-github-actions/terraform-apply@v1.34.2
         with: 

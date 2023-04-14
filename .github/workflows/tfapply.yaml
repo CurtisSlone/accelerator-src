@@ -20,8 +20,9 @@ jobs:
         uses: actions/checkout@v3
       - name: Check Commit
         run: |
-          if grep -q "rg1" "${{ github.event.head_commit.message}}"; then
+          if [[ "rg1" == *"${{ github.event.head_commit.message}}"* ]]; then
             echo "Found rg1"
+            exit 1
           else
             echo "Did not find"
             exit 1

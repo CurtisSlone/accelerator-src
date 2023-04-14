@@ -12,5 +12,4 @@ rg1 - simple resource group <--- short-code: 'rg1'
 
 rg2 - simple resource group <--- short-code: 'rg2'
 
-
-bump
+unit test

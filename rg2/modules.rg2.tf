@@ -6,7 +6,7 @@ module "mod_rg2" {
     location = "eastus"
     org_name = "anoa"
     environment = "dev"
-    workload_name = "test-rg1"
+    workload_name = "test-rg2"
     use_location_short_name = false
     custom_rg_name = var.custom_resource_group_name != null ? var.custom_resource_group_name : null
 

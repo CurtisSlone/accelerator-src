@@ -1,8 +1,8 @@
 # TEST TF WORKSPACES
 
-### Current Workspaces & Tag
+### Current Workspaces
 
-rg1 <-- tag: rg1
+rg1 
 
-rg2 <-- tag: rg2
+rg2
 

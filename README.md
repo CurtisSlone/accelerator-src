@@ -2,7 +2,7 @@
 
 ### Current Workspaces
 
-rg1 
+rg1 - simple resource group
 
-rg2
+rg2 - simple resource group
 

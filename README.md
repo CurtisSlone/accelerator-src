@@ -5,12 +5,11 @@ Terraform Plan Uses github.event.pull_request.title
 
 Terraform Apply uses github.event.commit
 
-See accelerator
 
 ### Current Workspaces
 
-rg1 - simple resource group
+rg1 - simple resource group <--- short-code: 'rg1'
 
-rg2 - simple resource group
+rg2 - simple resource group <--- short-code: 'rg2'
 
 

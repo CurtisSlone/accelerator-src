@@ -44,7 +44,7 @@ jobs:
                     esac
                     echo $TF_KEY
             -   name: Terraform plan
-                uses: azurenoops/terraform-github-actions/terraform-plan@v1.34.2
+                uses: dflook/terraform-github-actions/terraform-plan@v1.34.2
                 with:
                     path: rg2
                     backend_config: |
